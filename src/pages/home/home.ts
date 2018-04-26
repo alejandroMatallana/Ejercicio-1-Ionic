@@ -13,6 +13,9 @@ export class HomePage {
 
 	constructor(public navCtrl: NavController, public alertCtrl: AlertController) {}
 
+	/**
+ * Metodo que lanza un mensaje de alerta para los chats
+ */
 	showAlert() {
 		let alert = this.alertCtrl.create({
 			title: 'Ocupado',
@@ -22,6 +25,33 @@ export class HomePage {
 		alert.present();
 	}
 
+	/**
+ * Metodo que lanza un mensaje de alerta para los chats
+ */
+	mensajeAlerta() {
+		let alert = this.alertCtrl.create({
+			title: 'No me hables',
+			subTitle: 'Estoy en una reunion',
+			buttons: [ 'OK' ]
+		});
+		alert.present();
+	}
+
+	/**
+ * Metodo que lanza un mensaje de alerta para las llamadas
+ */
+	llamarNuevamente() {
+		let alert = this.alertCtrl.create({
+			title: 'Volver a llamar',
+			subTitle: '¿Quieres llamar de nuevo a esta persona?',
+			buttons: [ 'OK' ]
+		});
+		alert.present();
+	}
+
+	/**
+ * Metodo que lanza un mensaje de alerta para el estado
+ */
 	notificacion() {
 		let alert = this.alertCtrl.create({
 			title: 'Like',

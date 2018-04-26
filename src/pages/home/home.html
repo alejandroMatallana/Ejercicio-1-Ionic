@@ -42,14 +42,14 @@
               <h2>Andres</h2>
             </ion-item>
         
-            <ion-item (click)="showAlert()">
+            <ion-item (click)="mensajeAlerta()">
               <ion-thumbnail item-start>
                 <img src="assets/imgs/3.jpg" >
               </ion-thumbnail>
               <h2>Camila</h2>
             </ion-item>
         
-            <ion-item (click)="showAlert()"> 
+            <ion-item (click)="mensajeAlerta()"> 
               <ion-thumbnail item-start>
                 <img src="assets/imgs/mujer.jpg">
               </ion-thumbnail>
@@ -81,30 +81,30 @@
         
           <ion-list *ngSwitchCase="'llamadas'">
             <ion-item>
-                <ion-thumbnail item-start>
+                <ion-thumbnail item-start (click)="llamarNuevamente()">
                     <img src="assets/imgs/2.jpg">
                   </ion-thumbnail>
                   <h2>Juan</h2>
                   <h2>30 minutos</h2>
-                  <ion-icon  item-end name="call"></ion-icon>     
+                  <ion-icon (click)="llamarNuevamente()" item-end name="call"></ion-icon>     
             </ion-item>
         
             <ion-item>
-                <ion-thumbnail item-start>
+                <ion-thumbnail (click)="llamarNuevamente()" item-start>
                     <img src="assets/imgs/2.jpg">
                   </ion-thumbnail>
                   <h2>Juan</h2>
                   <h2>12 minutos</h2>
-                  <ion-icon  item-end name="videocam"></ion-icon>     
+                  <ion-icon (click)="llamarNuevamente()" item-end name="videocam"></ion-icon>     
             </ion-item>
         
             <ion-item>
-                <ion-thumbnail item-start>
+                <ion-thumbnail (click)="llamarNuevamente()" item-start >
                     <img src="assets/imgs/mujer.jpg">
                   </ion-thumbnail>
                   <h2>Laura</h2>
                   <h2>1 hora y 10 minutos</h2>
-                  <ion-icon  item-end name="videocam"></ion-icon>     
+                  <ion-icon (click)="llamarNuevamente()" item-end name="videocam"></ion-icon>     
             </ion-item>
         
             
